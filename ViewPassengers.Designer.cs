@@ -33,28 +33,28 @@
             label13 = new Label();
             label14 = new Label();
             textBox5 = new TextBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            GendCb = new ComboBox();
+            natcb = new ComboBox();
             label11 = new Label();
             label12 = new Label();
             label10 = new Label();
-            textBox4 = new TextBox();
+            PaddTb = new TextBox();
             label9 = new Label();
             label7 = new Label();
             label3 = new Label();
             label8 = new Label();
-            textBox3 = new TextBox();
+            PpassTb = new TextBox();
             label5 = new Label();
-            textBox2 = new TextBox();
+            PnameTb = new TextBox();
             label4 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            PidTb = new TextBox();
+            PassengerDGV = new DataGridView();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PassengerDGV).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -112,25 +112,25 @@
             textBox5.Size = new Size(278, 27);
             textBox5.TabIndex = 69;
             // 
-            // comboBox2
+            // GendCb
             // 
-            comboBox2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox2.ForeColor = SystemColors.ActiveBorder;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(867, 359);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(278, 43);
-            comboBox2.TabIndex = 68;
+            GendCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            GendCb.ForeColor = SystemColors.ActiveBorder;
+            GendCb.FormattingEnabled = true;
+            GendCb.Location = new Point(867, 359);
+            GendCb.Name = "GendCb";
+            GendCb.Size = new Size(278, 43);
+            GendCb.TabIndex = 68;
             // 
-            // comboBox1
+            // natcb
             // 
-            comboBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox1.ForeColor = SystemColors.ActiveBorder;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(268, 365);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(278, 43);
-            comboBox1.TabIndex = 67;
+            natcb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            natcb.ForeColor = SystemColors.ActiveBorder;
+            natcb.FormattingEnabled = true;
+            natcb.Location = new Point(268, 365);
+            natcb.Name = "natcb";
+            natcb.Size = new Size(278, 43);
+            natcb.TabIndex = 67;
             // 
             // label11
             // 
@@ -167,13 +167,13 @@
             label10.TabIndex = 64;
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // PaddTb
             // 
-            textBox4.BackColor = Color.AntiqueWhite;
-            textBox4.Location = new Point(867, 302);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(278, 27);
-            textBox4.TabIndex = 63;
+            PaddTb.BackColor = Color.AntiqueWhite;
+            PaddTb.Location = new Point(867, 302);
+            PaddTb.Name = "PaddTb";
+            PaddTb.Size = new Size(278, 27);
+            PaddTb.TabIndex = 63;
             // 
             // label9
             // 
@@ -222,13 +222,13 @@
             label8.TabIndex = 59;
             label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // PpassTb
             // 
-            textBox3.BackColor = Color.AntiqueWhite;
-            textBox3.Location = new Point(268, 302);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(278, 27);
-            textBox3.TabIndex = 58;
+            PpassTb.BackColor = Color.AntiqueWhite;
+            PpassTb.Location = new Point(268, 302);
+            PpassTb.Name = "PpassTb";
+            PpassTb.Size = new Size(278, 27);
+            PpassTb.TabIndex = 58;
             // 
             // label5
             // 
@@ -241,13 +241,13 @@
             label5.TabIndex = 57;
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // PnameTb
             // 
-            textBox2.BackColor = Color.AntiqueWhite;
-            textBox2.Location = new Point(867, 228);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(278, 27);
-            textBox2.TabIndex = 56;
+            PnameTb.BackColor = Color.AntiqueWhite;
+            PnameTb.Location = new Point(867, 228);
+            PnameTb.Name = "PnameTb";
+            PnameTb.Size = new Size(278, 27);
+            PnameTb.TabIndex = 56;
             // 
             // label4
             // 
@@ -272,23 +272,25 @@
             label6.TabIndex = 54;
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // PidTb
             // 
-            textBox1.BackColor = Color.AntiqueWhite;
-            textBox1.Location = new Point(268, 228);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(278, 27);
-            textBox1.TabIndex = 53;
+            PidTb.BackColor = Color.AntiqueWhite;
+            PidTb.Location = new Point(268, 228);
+            PidTb.Name = "PidTb";
+            PidTb.Size = new Size(278, 27);
+            PidTb.TabIndex = 53;
             // 
-            // dataGridView1
+            // PassengerDGV
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(71, 669);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1074, 462);
-            dataGridView1.TabIndex = 75;
+            PassengerDGV.BackgroundColor = SystemColors.ControlLightLight;
+            PassengerDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            PassengerDGV.Location = new Point(71, 597);
+            PassengerDGV.Name = "PassengerDGV";
+            PassengerDGV.RowHeadersWidth = 51;
+            PassengerDGV.RowTemplate.Height = 29;
+            PassengerDGV.Size = new Size(1117, 410);
+            PassengerDGV.TabIndex = 75;
+            PassengerDGV.CellContentClick += PassengerDGV_CellContentClick;
             // 
             // button1
             // 
@@ -296,7 +298,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.DarkKhaki;
-            button1.Location = new Point(351, 605);
+            button1.Location = new Point(351, 533);
             button1.Name = "button1";
             button1.Size = new Size(118, 58);
             button1.TabIndex = 76;
@@ -309,7 +311,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.DarkKhaki;
-            button2.Location = new Point(593, 605);
+            button2.Location = new Point(593, 533);
             button2.Name = "button2";
             button2.Size = new Size(109, 58);
             button2.TabIndex = 77;
@@ -322,12 +324,13 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.DarkKhaki;
-            button3.Location = new Point(475, 605);
+            button3.Location = new Point(475, 533);
             button3.Name = "button3";
             button3.Size = new Size(112, 58);
             button3.TabIndex = 78;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -335,12 +338,13 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.DarkKhaki;
-            button4.Location = new Point(710, 605);
+            button4.Location = new Point(710, 533);
             button4.Name = "button4";
             button4.Size = new Size(113, 58);
             button4.TabIndex = 79;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // ViewPassengers
             // 
@@ -352,26 +356,26 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(dataGridView1);
+            Controls.Add(PassengerDGV);
             Controls.Add(label13);
             Controls.Add(label14);
             Controls.Add(textBox5);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(GendCb);
+            Controls.Add(natcb);
             Controls.Add(label11);
             Controls.Add(label12);
             Controls.Add(label10);
-            Controls.Add(textBox4);
+            Controls.Add(PaddTb);
             Controls.Add(label9);
             Controls.Add(label7);
             Controls.Add(label3);
             Controls.Add(label8);
-            Controls.Add(textBox3);
+            Controls.Add(PpassTb);
             Controls.Add(label5);
-            Controls.Add(textBox2);
+            Controls.Add(PnameTb);
             Controls.Add(label4);
             Controls.Add(label6);
-            Controls.Add(textBox1);
+            Controls.Add(PidTb);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
@@ -379,7 +383,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ViewPassengers";
             Load += ViewPassengers_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PassengerDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -391,23 +395,23 @@
         private Label label13;
         private Label label14;
         private TextBox textBox5;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox GendCb;
+        private ComboBox natcb;
         private Label label11;
         private Label label12;
         private Label label10;
-        private TextBox textBox4;
+        private TextBox PaddTb;
         private Label label9;
         private Label label7;
         private Label label3;
         private Label label8;
-        private TextBox textBox3;
+        private TextBox PpassTb;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox PnameTb;
         private Label label4;
         private Label label6;
-        private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private TextBox PidTb;
+        private DataGridView PassengerDGV;
         private Button button1;
         private Button button2;
         private Button button3;
