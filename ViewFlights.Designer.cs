@@ -30,24 +30,24 @@
         {
             label2 = new Label();
             label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            FDate = new DateTimePicker();
             label9 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            DstCb = new ComboBox();
+            SrcCb = new ComboBox();
             label8 = new Label();
             label7 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
+            Seatnum = new TextBox();
             label6 = new Label();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            FcodeTb = new TextBox();
             button2 = new Button();
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            FlightDGV = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)FlightDGV).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -74,12 +74,12 @@
             label1.Text = "LVD airline";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // FDate
             // 
-            dateTimePicker1.Location = new Point(260, 295);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 38;
+            FDate.Location = new Point(260, 295);
+            FDate.Name = "FDate";
+            FDate.Size = new Size(250, 27);
+            FDate.TabIndex = 38;
             // 
             // label9
             // 
@@ -93,25 +93,28 @@
             label9.Text = "Take of date";
             label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // DstCb
             // 
-            comboBox2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox2.ForeColor = SystemColors.ActiveBorder;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(715, 280);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 43);
-            comboBox2.TabIndex = 36;
+            DstCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            DstCb.ForeColor = SystemColors.ActiveBorder;
+            DstCb.FormattingEnabled = true;
+            DstCb.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
+            DstCb.Location = new Point(715, 280);
+            DstCb.Name = "DstCb";
+            DstCb.Size = new Size(151, 43);
+            DstCb.TabIndex = 36;
+            DstCb.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
-            // comboBox1
+            // SrcCb
             // 
-            comboBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox1.ForeColor = SystemColors.ActiveBorder;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(715, 195);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 43);
-            comboBox1.TabIndex = 35;
+            SrcCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            SrcCb.ForeColor = SystemColors.ActiveBorder;
+            SrcCb.FormattingEnabled = true;
+            SrcCb.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
+            SrcCb.Location = new Point(715, 195);
+            SrcCb.Name = "SrcCb";
+            SrcCb.Size = new Size(151, 43);
+            SrcCb.TabIndex = 35;
             // 
             // label8
             // 
@@ -172,42 +175,32 @@
             label3.TabIndex = 30;
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // Seatnum
             // 
-            textBox2.BackColor = Color.AntiqueWhite;
-            textBox2.Location = new Point(490, 409);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(278, 27);
-            textBox2.TabIndex = 29;
+            Seatnum.BackColor = Color.AntiqueWhite;
+            Seatnum.Location = new Point(490, 409);
+            Seatnum.Name = "Seatnum";
+            Seatnum.Size = new Size(278, 27);
+            Seatnum.TabIndex = 29;
             // 
             // label6
             // 
             label6.BackColor = Color.DarkMagenta;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(250, 247);
+            label6.Location = new Point(275, 247);
             label6.Name = "label6";
             label6.Size = new Size(278, 10);
             label6.TabIndex = 28;
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // FcodeTb
             // 
-            textBox1.BackColor = Color.AntiqueWhite;
-            textBox1.Location = new Point(250, 230);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(278, 27);
-            textBox1.TabIndex = 27;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 526);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1074, 462);
-            dataGridView1.TabIndex = 39;
+            FcodeTb.BackColor = Color.AntiqueWhite;
+            FcodeTb.Location = new Point(275, 230);
+            FcodeTb.Name = "FcodeTb";
+            FcodeTb.Size = new Size(278, 27);
+            FcodeTb.TabIndex = 27;
             // 
             // button2
             // 
@@ -221,6 +214,7 @@
             button2.TabIndex = 41;
             button2.Text = "Reset";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -234,6 +228,7 @@
             button1.TabIndex = 40;
             button1.Text = "Update";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
@@ -247,6 +242,7 @@
             button3.TabIndex = 42;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -260,6 +256,19 @@
             button4.TabIndex = 43;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // FlightDGV
+            // 
+            FlightDGV.BackgroundColor = SystemColors.ControlLightLight;
+            FlightDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            FlightDGV.Location = new Point(-15, 538);
+            FlightDGV.Name = "FlightDGV";
+            FlightDGV.RowHeadersWidth = 51;
+            FlightDGV.RowTemplate.Height = 29;
+            FlightDGV.Size = new Size(1117, 348);
+            FlightDGV.TabIndex = 76;
+            FlightDGV.CellContentClick += PassengerDGV_CellContentClick;
             // 
             // ViewFlights
             // 
@@ -267,30 +276,31 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
             ClientSize = new Size(1098, 1000);
+            Controls.Add(FlightDGV);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(FDate);
             Controls.Add(label9);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(DstCb);
+            Controls.Add(SrcCb);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(Seatnum);
             Controls.Add(label6);
-            Controls.Add(textBox1);
+            Controls.Add(FcodeTb);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ViewFlights";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ViewFlights";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += ViewFlights_Load;
+            ((System.ComponentModel.ISupportInitialize)FlightDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -299,22 +309,22 @@
 
         private Label label2;
         private Label label1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker FDate;
         private Label label9;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox DstCb;
+        private ComboBox SrcCb;
         private Label label8;
         private Label label7;
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox Seatnum;
         private Label label6;
-        private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private TextBox FcodeTb;
         private Button button2;
         private Button button1;
         private Button button3;
         private Button button4;
+        private DataGridView FlightDGV;
     }
 }
