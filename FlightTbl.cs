@@ -48,7 +48,7 @@ namespace airline
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (FcodeTb.Text == "" || FDate.Text == "" || FDest.Text == "" || Fsrc.Text == "" || seatNumb.Text == "")
+            if (FcodeTb.Text == "" || FDate.Text == "" || FLand.Text == "" || FDest.Text == "" || Fsrc.Text == "" || FCap.Text == "")
             {
                 MessageBox.Show("Missing information");
             }
@@ -63,7 +63,7 @@ namespace airline
                 try
                 {
                     Con.Open();
-                    string query = "INSERT INTO FlightTbl VALUES ('" + FcodeTb.Text + "',  '" + Fsrc.SelectedItem.ToString() + "', '" + FDest.SelectedItem.ToString() + "', '" + FDate.Value.ToString() + "', '" + seatNumb.Text + "')";
+                    string query = "INSERT INTO FlightTbl VALUES ('" + FcodeTb.Text + "',  '" + Fsrc.SelectedItem.ToString() + "', '" + FDest.SelectedItem.ToString() + "', '" + FDate.Value.ToString() + "', '" + FLand.Value.ToString() + "', '" + FCap.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Flight Recorded Successfully");
@@ -88,7 +88,7 @@ namespace airline
         private void button2_Click(object sender, EventArgs e)
         {
             FcodeTb.Text = "";
-            seatNumb.Text = "";
+            FCap.Text = "";
 
 
         }
@@ -116,5 +116,36 @@ namespace airline
 
         }
 
+        private void seatNumb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

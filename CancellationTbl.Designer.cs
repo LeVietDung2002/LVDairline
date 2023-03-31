@@ -28,92 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
             label20 = new Label();
-            comboBox4 = new ComboBox();
-            comboBox3 = new ComboBox();
-            label10 = new Label();
-            textBox4 = new TextBox();
+            TidCb = new ComboBox();
             label9 = new Label();
             label7 = new Label();
             label3 = new Label();
             label4 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
+            CanId = new TextBox();
             label2 = new Label();
+            button5 = new Button();
+            CancelDGV = new DataGridView();
+            button3 = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            label5 = new Label();
+            FcodeTb = new TextBox();
+            grBox = new GroupBox();
+            CancDate = new DateTimePicker();
+            button4 = new Button();
+            label8 = new Label();
+            label11 = new Label();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label10 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            panel1 = new Panel();
+            button6 = new Button();
+            ((System.ComponentModel.ISupportInitialize)CancelDGV).BeginInit();
+            grBox.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(117, 466);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1074, 462);
-            dataGridView1.TabIndex = 112;
             // 
             // label20
             // 
             label20.BackColor = Color.FloralWhite;
             label20.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label20.ForeColor = Color.DarkKhaki;
-            label20.Location = new Point(404, 386);
+            label20.Location = new Point(181, 703);
             label20.Name = "label20";
             label20.Size = new Size(511, 50);
             label20.TabIndex = 111;
             label20.Text = "Cancellation list";
             label20.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // comboBox4
+            // TidCb
             // 
-            comboBox4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox4.ForeColor = SystemColors.ActiveBorder;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(412, 275);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(151, 43);
-            comboBox4.TabIndex = 99;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox3.ForeColor = SystemColors.ActiveBorder;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(1064, 201);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(151, 43);
-            comboBox3.TabIndex = 98;
-            // 
-            // label10
-            // 
-            label10.BackColor = Color.DarkMagenta;
-            label10.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.DarkKhaki;
-            label10.Location = new Point(995, 308);
-            label10.Name = "label10";
-            label10.Size = new Size(278, 10);
-            label10.TabIndex = 96;
-            label10.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.AntiqueWhite;
-            textBox4.Location = new Point(995, 291);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(278, 27);
-            textBox4.TabIndex = 95;
+            TidCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            TidCb.ForeColor = Color.Red;
+            TidCb.FormattingEnabled = true;
+            TidCb.Location = new Point(315, 355);
+            TidCb.Name = "TidCb";
+            TidCb.Size = new Size(151, 43);
+            TidCb.TabIndex = 98;
+            TidCb.SelectedIndexChanged += TidCb_SelectedIndexChanged;
+            TidCb.SelectionChangeCommitted += TidCb_SelectionChangeCommitted;
             // 
             // label9
             // 
             label9.BackColor = Color.FloralWhite;
             label9.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.DarkKhaki;
-            label9.Location = new Point(609, 269);
+            label9.Location = new Point(17, 268);
             label9.Name = "label9";
-            label9.Size = new Size(432, 50);
+            label9.Size = new Size(194, 50);
             label9.TabIndex = 94;
             label9.Text = "Date";
             label9.TextAlign = ContentAlignment.MiddleCenter;
@@ -123,9 +101,9 @@
             label7.BackColor = Color.FloralWhite;
             label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(-41, 268);
+            label7.Location = new Point(40, 114);
             label7.Name = "label7";
-            label7.Size = new Size(432, 50);
+            label7.Size = new Size(203, 50);
             label7.TabIndex = 93;
             label7.Text = "Flight Code";
             label7.TextAlign = ContentAlignment.MiddleCenter;
@@ -135,112 +113,323 @@
             label3.BackColor = Color.FloralWhite;
             label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(709, 194);
+            label3.Location = new Point(25, 192);
             label3.Name = "label3";
-            label3.Size = new Size(349, 50);
+            label3.Size = new Size(195, 50);
             label3.TabIndex = 92;
-            label3.Text = "Passenger Name";
+            label3.Text = "TicketId";
             label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.BackColor = Color.FloralWhite;
             label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.DarkKhaki;
-            label4.Location = new Point(29, 194);
+            label4.Location = new Point(48, 36);
             label4.Name = "label4";
-            label4.Size = new Size(265, 50);
+            label4.Size = new Size(195, 50);
             label4.TabIndex = 91;
             label4.Text = "Cancelled ID";
             label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Click += label4_Click;
             // 
             // label6
             // 
             label6.BackColor = Color.DarkMagenta;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(412, 228);
+            label6.Location = new Point(315, 228);
             label6.Name = "label6";
             label6.Size = new Size(278, 10);
             label6.TabIndex = 90;
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // CanId
             // 
-            textBox1.BackColor = Color.AntiqueWhite;
-            textBox1.Location = new Point(412, 211);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(278, 27);
-            textBox1.TabIndex = 89;
+            CanId.BackColor = Color.AntiqueWhite;
+            CanId.Location = new Point(315, 211);
+            CanId.Name = "CanId";
+            CanId.Size = new Size(278, 27);
+            CanId.TabIndex = 89;
             // 
             // label2
             // 
-            label2.BackColor = Color.FloralWhite;
-            label2.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkKhaki;
-            label2.Location = new Point(480, 93);
+            label2.BackColor = SystemColors.HotTrack;
+            label2.Font = new Font("Sitka Small", 25.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.DarkSeaGreen;
+            label2.Location = new Point(-1, 85);
             label2.Name = "label2";
-            label2.Size = new Size(511, 50);
+            label2.Size = new Size(809, 70);
             label2.TabIndex = 88;
-            label2.Text = "Cancellation";
+            label2.Text = "Ticket Cancellation";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.DarkSalmon;
+            button5.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button5.ForeColor = Color.Crimson;
+            button5.Location = new Point(1248, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(40, 36);
+            button5.TabIndex = 113;
+            button5.Text = "X";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // CancelDGV
+            // 
+            CancelDGV.BackgroundColor = SystemColors.ControlLightLight;
+            CancelDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CancelDGV.Location = new Point(29, 799);
+            CancelDGV.Name = "CancelDGV";
+            CancelDGV.RowHeadersWidth = 51;
+            CancelDGV.RowTemplate.Height = 29;
+            CancelDGV.Size = new Size(741, 249);
+            CancelDGV.TabIndex = 114;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Crimson;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.DarkKhaki;
+            button3.Location = new Point(181, 642);
+            button3.Name = "button3";
+            button3.Size = new Size(122, 58);
+            button3.TabIndex = 115;
+            button3.Text = "Cancel";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Crimson;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.DarkKhaki;
+            button1.Location = new Point(357, 642);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 58);
+            button1.TabIndex = 116;
+            button1.Text = "Clear";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Crimson;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.DarkKhaki;
+            button2.Location = new Point(523, 642);
+            button2.Name = "button2";
+            button2.Size = new Size(122, 58);
+            button2.TabIndex = 117;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // label5
+            // 
+            label5.BackColor = Color.DarkMagenta;
+            label5.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.DarkKhaki;
+            label5.Location = new Point(315, 285);
+            label5.Name = "label5";
+            label5.Size = new Size(278, 10);
+            label5.TabIndex = 119;
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // FcodeTb
+            // 
+            FcodeTb.BackColor = Color.AntiqueWhite;
+            FcodeTb.Location = new Point(315, 268);
+            FcodeTb.Name = "FcodeTb";
+            FcodeTb.Size = new Size(278, 27);
+            FcodeTb.TabIndex = 118;
+            FcodeTb.TextAlign = HorizontalAlignment.Right;
+            // 
+            // grBox
+            // 
+            grBox.BackColor = Color.FloralWhite;
+            grBox.Controls.Add(CancDate);
+            grBox.Controls.Add(label9);
+            grBox.Controls.Add(label3);
+            grBox.Controls.Add(label7);
+            grBox.Controls.Add(label4);
+            grBox.Font = new Font("Segoe UI", 19F, FontStyle.Regular, GraphicsUnit.Point);
+            grBox.ForeColor = SystemColors.ControlText;
+            grBox.Location = new Point(59, 158);
+            grBox.Name = "grBox";
+            grBox.Size = new Size(681, 415);
+            grBox.TabIndex = 120;
+            grBox.TabStop = false;
+            grBox.Enter += grBox_Enter;
+            // 
+            // CancDate
+            // 
+            CancDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CancDate.Location = new Point(256, 283);
+            CancDate.Name = "CancDate";
+            CancDate.Size = new Size(250, 27);
+            CancDate.TabIndex = 95;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.DarkSalmon;
+            button4.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.ForeColor = Color.Crimson;
+            button4.Location = new Point(759, -1);
+            button4.Name = "button4";
+            button4.Size = new Size(37, 31);
+            button4.TabIndex = 121;
+            button4.Text = "X";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // label8
+            // 
+            label8.BackColor = SystemColors.GradientInactiveCaption;
+            label8.FlatStyle = FlatStyle.System;
+            label8.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label8.ForeColor = Color.DarkOrchid;
+            label8.Location = new Point(-1, 24);
+            label8.Name = "label8";
+            label8.Size = new Size(809, 51);
+            label8.TabIndex = 122;
+            label8.Text = "LVD airline";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            label11.BackColor = Color.Black;
+            label11.Location = new Point(-283, 75);
+            label11.Name = "label11";
+            label11.Size = new Size(1363, 10);
+            label11.TabIndex = 123;
             // 
             // label1
             // 
-            label1.BackColor = Color.FloralWhite;
-            label1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.DarkKhaki;
-            label1.Location = new Point(480, 16);
+            label1.BackColor = Color.Black;
+            label1.Location = new Point(-252, 145);
             label1.Name = "label1";
-            label1.Size = new Size(511, 50);
-            label1.TabIndex = 87;
-            label1.Text = "LVD airline";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Size = new Size(1363, 10);
+            label1.TabIndex = 124;
+            // 
+            // label10
+            // 
+            label10.BackColor = Color.Black;
+            label10.Location = new Point(-283, 576);
+            label10.Name = "label10";
+            label10.Size = new Size(1363, 10);
+            label10.TabIndex = 125;
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.Black;
+            label12.Location = new Point(-1, -1);
+            label12.Name = "label12";
+            label12.Size = new Size(13, 587);
+            label12.TabIndex = 126;
+            // 
+            // label13
+            // 
+            label13.BackColor = Color.Black;
+            label13.Location = new Point(794, -1);
+            label13.Name = "label13";
+            label13.Size = new Size(14, 587);
+            label13.TabIndex = 127;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DodgerBlue;
+            panel1.Controls.Add(button6);
+            panel1.Dock = DockStyle.Top;
+            panel1.ForeColor = SystemColors.ControlLight;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(808, 33);
+            panel1.TabIndex = 128;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.DarkSalmon;
+            button6.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.ForeColor = Color.Crimson;
+            button6.Location = new Point(909, 3);
+            button6.Name = "button6";
+            button6.Size = new Size(40, 36);
+            button6.TabIndex = 123;
+            button6.Text = "X";
+            button6.UseVisualStyleBackColor = false;
             // 
             // CancellationTbl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(1300, 1100);
-            Controls.Add(dataGridView1);
-            Controls.Add(label20);
-            Controls.Add(comboBox4);
-            Controls.Add(comboBox3);
+            ClientSize = new Size(808, 1100);
+            Controls.Add(label13);
+            Controls.Add(label12);
             Controls.Add(label10);
-            Controls.Add(textBox4);
-            Controls.Add(label9);
-            Controls.Add(label7);
-            Controls.Add(label3);
-            Controls.Add(label4);
-            Controls.Add(label6);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(label11);
+            Controls.Add(button4);
+            Controls.Add(label5);
+            Controls.Add(FcodeTb);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(CancelDGV);
+            Controls.Add(button5);
+            Controls.Add(label20);
+            Controls.Add(TidCb);
+            Controls.Add(label6);
+            Controls.Add(CanId);
+            Controls.Add(label2);
+            Controls.Add(grBox);
+            Controls.Add(label8);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CancellationTbl";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CancellationTbl";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += CancellationTbl_Load;
+            ((System.ComponentModel.ISupportInitialize)CancelDGV).EndInit();
+            grBox.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private Label label20;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private Label label10;
-        private TextBox textBox4;
+        private ComboBox TidCb;
         private Label label9;
         private Label label7;
         private Label label3;
         private Label label4;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox CanId;
         private Label label2;
+        private Button button5;
+        private DataGridView CancelDGV;
+        private Button button3;
+        private Button button1;
+        private Button button2;
+        private Label label5;
+        private TextBox FcodeTb;
+        private GroupBox grBox;
+        private DateTimePicker CancDate;
+        private Button button4;
+        private Label label8;
+        private Label label11;
         private Label label1;
+        private Label label10;
+        private Label label12;
+        private Label label13;
+        private Panel panel1;
+        private Button button6;
     }
 }

@@ -51,7 +51,8 @@ namespace airline
             SrcCb.SelectedItem = row.Cells[1].Value.ToString();
             DstCb.SelectedItem = row.Cells[2].Value.ToString();
             FDate.Text = row.Cells[3].Value.ToString();
-            Seatnum.Text = row.Cells[4].Value.ToString();
+            FLand.Text = row.Cells[4].Value.ToString();
+            Seatnum.Text = row.Cells[5].Value.ToString();
 
         }
 
@@ -144,6 +145,21 @@ namespace airline
                     }
                 }
             }
+        }
+
+        private void FDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SrcCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

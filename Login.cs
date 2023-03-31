@@ -15,6 +15,7 @@ namespace airline
         public Login()
         {
             InitializeComponent();
+            PasswordTb.TextChanged += PasswordTb_TextChanged;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -36,6 +37,59 @@ namespace airline
         {
             Application.Exit();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UidTb.Text = "";
+            PasswordTb.Text = "";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Check if the username and password are correct
+            if (string.IsNullOrWhiteSpace(UidTb.Text) || string.IsNullOrWhiteSpace(PasswordTb.Text))
+            {
+                MessageBox.Show("Enter user id or password");
+                return;
+            }
+
+            if (UidTb.Text == "admin" && PasswordTb.Text == "admin")
+            {
+                MessageBox.Show("Login Successful!");
+                // Navigate to the main menu form or dashboard
+                Home mainMenu = new Home();
+                mainMenu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username or Password. Please try again.");
+            }
+        }
+
+        private void PasswordTb_TextChanged(object sender, EventArgs e)
+        {
+            PasswordTb.PasswordChar = '*';
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void UidTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
         }
     }
 }

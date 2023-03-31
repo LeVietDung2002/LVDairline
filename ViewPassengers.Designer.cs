@@ -53,11 +53,17 @@
             button3 = new Button();
             button4 = new Button();
             panel1 = new Panel();
-            label1 = new Label();
             label2 = new Label();
+            label20 = new Label();
             panel2 = new Panel();
-            groupBox1 = new GroupBox();
             button5 = new Button();
+            label15 = new Label();
+            groupBox1 = new GroupBox();
+            label1 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
             ((System.ComponentModel.ISupportInitialize)PassengerDGV).BeginInit();
             panel2.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -268,7 +274,7 @@
             // 
             PassengerDGV.BackgroundColor = SystemColors.ControlLightLight;
             PassengerDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PassengerDGV.Location = new Point(71, 507);
+            PassengerDGV.Location = new Point(28, 499);
             PassengerDGV.Name = "PassengerDGV";
             PassengerDGV.RowHeadersWidth = 51;
             PassengerDGV.RowTemplate.Height = 29;
@@ -338,51 +344,80 @@
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 827);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1200, 23);
+            panel1.Size = new Size(1192, 23);
             panel1.TabIndex = 29;
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.FloralWhite;
-            label1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.DarkKhaki;
-            label1.Location = new Point(114, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(511, 117);
-            label1.TabIndex = 27;
-            label1.Text = "LVD airline";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            label2.BackColor = Color.FloralWhite;
-            label2.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.BackColor = SystemColors.HotTrack;
+            label2.Font = new Font("SimSun", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.DarkKhaki;
-            label2.Location = new Point(498, 54);
+            label2.Location = new Point(-10, 107);
             label2.Name = "label2";
-            label2.Size = new Size(511, 93);
+            label2.Size = new Size(1170, 52);
             label2.TabIndex = 28;
             label2.Text = "View Passengers";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Black;
+            label20.Location = new Point(-10, 149);
+            label20.Name = "label20";
+            label20.Size = new Size(1168, 10);
+            label20.TabIndex = 91;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.LightYellow;
+            panel2.BackColor = Color.DodgerBlue;
             panel2.Controls.Add(button5);
             panel2.Dock = DockStyle.Top;
+            panel2.ForeColor = SystemColors.ControlLight;
             panel2.Location = new Point(3, 19);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1154, 32);
-            panel2.TabIndex = 29;
+            panel2.Size = new Size(1154, 42);
+            panel2.TabIndex = 125;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.DarkSalmon;
+            button5.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button5.ForeColor = Color.Crimson;
+            button5.Location = new Point(1111, 0);
+            button5.Name = "button5";
+            button5.Size = new Size(40, 36);
+            button5.TabIndex = 79;
+            button5.Text = "X";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
+            // 
+            // label15
+            // 
+            label15.BackColor = SystemColors.GradientInactiveCaption;
+            label15.FlatStyle = FlatStyle.System;
+            label15.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label15.ForeColor = Color.DarkOrchid;
+            label15.Location = new Point(3, 54);
+            label15.Name = "label15";
+            label15.Size = new Size(1157, 53);
+            label15.TabIndex = 126;
+            label15.Text = "LVD airline";
+            label15.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
             groupBox1.AccessibleRole = AccessibleRole.Cursor;
             groupBox1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             groupBox1.BackColor = Color.FloralWhite;
-            groupBox1.Controls.Add(panel2);
-            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label19);
+            groupBox1.Controls.Add(label18);
+            groupBox1.Controls.Add(label17);
             groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(panel2);
+            groupBox1.Controls.Add(label20);
+            groupBox1.Controls.Add(label2);
             groupBox1.ForeColor = SystemColors.ControlLightLight;
             groupBox1.Location = new Point(12, 10);
             groupBox1.Name = "groupBox1";
@@ -391,25 +426,53 @@
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // button5
+            // label1
             // 
-            button5.BackColor = Color.DarkSalmon;
-            button5.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button5.ForeColor = Color.Crimson;
-            button5.Location = new Point(1114, 0);
-            button5.Name = "button5";
-            button5.Size = new Size(40, 36);
-            button5.TabIndex = 0;
-            button5.Text = "X";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            label1.BackColor = Color.Black;
+            label1.Location = new Point(-3, 107);
+            label1.Name = "label1";
+            label1.Size = new Size(1163, 10);
+            label1.TabIndex = 127;
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.Black;
+            label16.Location = new Point(9, 19);
+            label16.Name = "label16";
+            label16.Size = new Size(10, 428);
+            label16.TabIndex = 128;
+            // 
+            // label17
+            // 
+            label17.BackColor = Color.Black;
+            label17.Location = new Point(1150, 19);
+            label17.Name = "label17";
+            label17.Size = new Size(10, 417);
+            label17.TabIndex = 128;
+            // 
+            // label18
+            // 
+            label18.BackColor = Color.Black;
+            label18.Location = new Point(0, 9);
+            label18.Name = "label18";
+            label18.Size = new Size(1163, 10);
+            label18.TabIndex = 129;
+            // 
+            // label19
+            // 
+            label19.BackColor = Color.Black;
+            label19.Location = new Point(-6, 428);
+            label19.Name = "label19";
+            label19.Size = new Size(1163, 10);
+            label19.TabIndex = 130;
             // 
             // ViewPassengers
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(1200, 850);
+            ClientSize = new Size(1192, 850);
+            Controls.Add(label16);
             Controls.Add(panel1);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -475,10 +538,16 @@
         private Button button3;
         private Button button4;
         private Panel panel1;
-        private Label label1;
         private Label label2;
+        private Label label20;
         private Panel panel2;
-        private GroupBox groupBox1;
         private Button button5;
+        private Label label15;
+        private GroupBox groupBox1;
+        private Label label1;
+        private Label label19;
+        private Label label18;
+        private Label label17;
+        private Label label16;
     }
 }

@@ -22,8 +22,10 @@ namespace airline
             //Application.Run(new AddPassengers());
             //Application.Run(new ViewPassengers());
             //Application.Run(new FlightTbl());
-            Application.Run(new ViewFlights());
+            //Application.Run(new ViewFlights());
 
+            //Application.Run(new Ticket());
+            Application.Run(new Form1());
         }
     }
 }
