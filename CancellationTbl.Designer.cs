@@ -187,6 +187,7 @@
             CancelDGV.RowTemplate.Height = 29;
             CancelDGV.Size = new Size(741, 249);
             CancelDGV.TabIndex = 114;
+            CancelDGV.CellContentClick += CancelDGV_CellContentClick;
             // 
             // button3
             // 

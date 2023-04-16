@@ -158,5 +158,10 @@ namespace airline
             Application.Exit();
 
         }
+
+        private void CancelDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

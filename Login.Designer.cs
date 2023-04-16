@@ -50,6 +50,10 @@
             label1 = new Label();
             label8 = new Label();
             label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -124,7 +128,7 @@
             label3.BackColor = Color.DarkMagenta;
             label3.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(290, 224);
+            label3.Location = new Point(293, 211);
             label3.Name = "label3";
             label3.Size = new Size(211, 50);
             label3.TabIndex = 5;
@@ -198,7 +202,7 @@
             label7.BackColor = Color.DarkMagenta;
             label7.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(523, 251);
+            label7.Location = new Point(522, 237);
             label7.Name = "label7";
             label7.Size = new Size(278, 10);
             label7.TabIndex = 12;
@@ -207,7 +211,7 @@
             // PasswordTb
             // 
             PasswordTb.BackColor = Color.AntiqueWhite;
-            PasswordTb.Location = new Point(523, 234);
+            PasswordTb.Location = new Point(522, 220);
             PasswordTb.Name = "PasswordTb";
             PasswordTb.Size = new Size(278, 27);
             PasswordTb.TabIndex = 13;
@@ -296,12 +300,48 @@
             label9.Size = new Size(10, 165);
             label9.TabIndex = 133;
             // 
+            // label10
+            // 
+            label10.BackColor = Color.Black;
+            label10.Location = new Point(284, 285);
+            label10.Name = "label10";
+            label10.Size = new Size(10, 165);
+            label10.TabIndex = 134;
+            // 
+            // label11
+            // 
+            label11.BackColor = Color.Black;
+            label11.Location = new Point(284, 33);
+            label11.Name = "label11";
+            label11.Size = new Size(10, 165);
+            label11.TabIndex = 135;
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.Black;
+            label12.Location = new Point(284, 30);
+            label12.Name = "label12";
+            label12.Size = new Size(633, 10);
+            label12.TabIndex = 136;
+            // 
+            // label13
+            // 
+            label13.BackColor = Color.Black;
+            label13.Location = new Point(284, 440);
+            label13.Name = "label13";
+            label13.Size = new Size(633, 10);
+            label13.TabIndex = 137;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(800, 450);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label1);
@@ -354,5 +394,9 @@
         private Label label1;
         private Label label8;
         private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
     }
 }

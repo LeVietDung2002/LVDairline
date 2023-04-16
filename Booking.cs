@@ -26,5 +26,10 @@ namespace airline
         {
             Application.Exit();
         }
+
+        private void FLand_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

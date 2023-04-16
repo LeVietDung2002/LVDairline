@@ -221,6 +221,7 @@
             FcodeTb.Name = "FcodeTb";
             FcodeTb.Size = new Size(278, 27);
             FcodeTb.TabIndex = 27;
+            FcodeTb.TextChanged += FcodeTb_TextChanged;
             // 
             // button2
             // 
@@ -296,6 +297,7 @@
             FLand.Name = "FLand";
             FLand.Size = new Size(250, 27);
             FLand.TabIndex = 78;
+            FLand.ValueChanged += FLand_ValueChanged;
             // 
             // label10
             // 

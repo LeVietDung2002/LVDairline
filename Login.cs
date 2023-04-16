@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -91,5 +92,27 @@ namespace airline
         private void label2_Click(object sender, EventArgs e)
         {
         }
+        // Function to calculate the MD5 hash of a string
+        private static string CalculateMD5Hash(string input)
+        {
+            // Create a new instance of the MD5CryptoServiceProvider class.
+            MD5 md5Hasher = MD5.Create();
+
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
+
+            // Create a new StringBuilder to collect the bytes and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data and format each one as a hexadecimal string.
+            foreach (byte b in data)
+            {
+                sBuilder.Append(b.ToString("x2"));
+            }
+
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
+        }
+
     }
 }

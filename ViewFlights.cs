@@ -119,11 +119,38 @@ namespace airline
             }
         }
 
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    using (SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\LVDairline.mdf;Integrated Security=True;Connect Timeout=30"))
+        //    {
+        //        if (FcodeTb.Text == "" || SrcCb.SelectedItem == null || DstCb.SelectedItem == null || FDate.Text == "" || Seatnum.Text == "")
+        //        {
+        //            MessageBox.Show("Missing information");
+        //        }
+        //        else
+        //        {
+        //            try
+        //            {
+        //                Con.Open();
+        //                string query = "update FlightTbl set Fsrc='" + SrcCb.SelectedItem.ToString() + "', FDest='" + DstCb.SelectedItem.ToString() + "', FDate='" + FDate.Value.Date.ToString() + "', FCap='" + Seatnum.Text + "' where Fcode='" + FcodeTb.Text + "';";
+        //                SqlCommand cmd = new SqlCommand(query, Con);
+        //                cmd.ExecuteNonQuery();
+        //                MessageBox.Show("Flight Updated Successfully");
+        //                Con.Close();
+        //                populate(); // refresh the data in the DataGridView with the updated values
+        //            }
+        //            catch (Exception Ex)
+        //            {
+        //                MessageBox.Show(Ex.Message);
+        //            }
+        //        }
+        //    }
+        //}
         private void button1_Click(object sender, EventArgs e)
         {
             using (SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\LVDairline.mdf;Integrated Security=True;Connect Timeout=30"))
             {
-                if (FcodeTb.Text == "" || SrcCb.SelectedItem == null || DstCb.SelectedItem == null || FDate.Text == "" || Seatnum.Text == "")
+                if (FcodeTb.Text == "" || SrcCb.SelectedItem == null || DstCb.SelectedItem == null || FLand.Text == "" || FDate.Text == "" || Seatnum.Text == "")
                 {
                     MessageBox.Show("Missing information");
                 }
@@ -132,8 +159,14 @@ namespace airline
                     try
                     {
                         Con.Open();
-                        string query = "update FlightTbl set Fsrc='" + SrcCb.SelectedItem.ToString() + "', FDest='" + DstCb.SelectedItem.ToString() + "', FDate='" + FDate.Value.Date.ToString() + "', FCap='" + Seatnum.Text + "' where Fcode='" + FcodeTb.Text + "';";
+                        string query = "update FlightTbl set Fsrc=@Fsrc, FDest=@FDest,FLand=@FLand , FDate=@FDate, FCap=@FCap where Fcode=@Fcode;";
                         SqlCommand cmd = new SqlCommand(query, Con);
+                        cmd.Parameters.AddWithValue("@Fsrc", SrcCb.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@FDest", DstCb.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@FDate", FDate.Value.Date);
+                        cmd.Parameters.AddWithValue("@FLand", FLand.Value.Date);
+                        cmd.Parameters.AddWithValue("@FCap", Seatnum.Text);
+                        cmd.Parameters.AddWithValue("@Fcode", FcodeTb.Text);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Flight Updated Successfully");
                         Con.Close();
@@ -158,6 +191,16 @@ namespace airline
         }
 
         private void SrcCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FLand_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FcodeTb_TextChanged(object sender, EventArgs e)
         {
 
         }

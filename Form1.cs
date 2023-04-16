@@ -19,7 +19,7 @@ namespace airline
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            startpoint += 1;
+            startpoint += 2;
             ProgressBar.Value = startpoint;
             if (ProgressBar.Value == 100)
             {

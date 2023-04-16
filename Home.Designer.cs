@@ -38,8 +38,8 @@
             label2 = new Label();
             label16 = new Label();
             panel2 = new Panel();
-            button6 = new Button();
             button5 = new Button();
+            button6 = new Button();
             label4 = new Label();
             label3 = new Label();
             panel1 = new Panel();
@@ -54,7 +54,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Desktop;
-            label1.Location = new Point(181, 128);
+            label1.Location = new Point(199, 128);
             label1.Name = "label1";
             label1.Size = new Size(423, 50);
             label1.TabIndex = 6;
@@ -155,18 +155,6 @@
             panel2.Size = new Size(800, 33);
             panel2.TabIndex = 123;
             // 
-            // button6
-            // 
-            button6.BackColor = Color.DarkSalmon;
-            button6.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button6.ForeColor = Color.Crimson;
-            button6.Location = new Point(909, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(40, 36);
-            button6.TabIndex = 123;
-            button6.Text = "X";
-            button6.UseVisualStyleBackColor = false;
-            // 
             // button5
             // 
             button5.BackColor = Color.DarkSalmon;
@@ -179,6 +167,18 @@
             button5.Text = "X";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.DarkSalmon;
+            button6.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.ForeColor = Color.Crimson;
+            button6.Location = new Point(909, 3);
+            button6.Name = "button6";
+            button6.Size = new Size(40, 36);
+            button6.TabIndex = 123;
+            button6.Text = "X";
+            button6.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -240,6 +240,7 @@
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
+            Load += Home_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);

@@ -80,6 +80,7 @@
             FLand.Name = "FLand";
             FLand.Size = new Size(250, 27);
             FLand.TabIndex = 80;
+            FLand.ValueChanged += FLand_ValueChanged;
             // 
             // button3
             // 
