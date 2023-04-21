@@ -31,5 +31,15 @@ namespace airline
         {
 
         }
+
+        private void Booking_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

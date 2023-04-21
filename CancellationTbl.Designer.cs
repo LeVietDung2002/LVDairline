@@ -65,9 +65,9 @@
             label20.BackColor = Color.FloralWhite;
             label20.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label20.ForeColor = Color.DarkKhaki;
-            label20.Location = new Point(181, 703);
+            label20.Location = new Point(147, 605);
             label20.Name = "label20";
-            label20.Size = new Size(511, 50);
+            label20.Size = new Size(520, 50);
             label20.TabIndex = 111;
             label20.Text = "Cancellation list";
             label20.TextAlign = ContentAlignment.MiddleCenter;
@@ -77,7 +77,7 @@
             TidCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             TidCb.ForeColor = Color.Red;
             TidCb.FormattingEnabled = true;
-            TidCb.Location = new Point(315, 355);
+            TidCb.Location = new Point(261, 167);
             TidCb.Name = "TidCb";
             TidCb.Size = new Size(151, 43);
             TidCb.TabIndex = 98;
@@ -87,51 +87,48 @@
             // label9
             // 
             label9.BackColor = Color.FloralWhite;
-            label9.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.DarkKhaki;
-            label9.Location = new Point(17, 268);
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(23, 230);
             label9.Name = "label9";
-            label9.Size = new Size(194, 50);
+            label9.Size = new Size(142, 40);
             label9.TabIndex = 94;
-            label9.Text = "Date";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Text = "Date:";
             // 
             // label7
             // 
             label7.BackColor = Color.FloralWhite;
-            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(40, 114);
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(23, 110);
             label7.Name = "label7";
-            label7.Size = new Size(203, 50);
+            label7.Size = new Size(175, 40);
             label7.TabIndex = 93;
-            label7.Text = "Flight Code";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            label7.Text = "Flight Code:";
+            label7.Click += label7_Click;
             // 
             // label3
             // 
             label3.BackColor = Color.FloralWhite;
-            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(25, 192);
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(23, 170);
             label3.Name = "label3";
-            label3.Size = new Size(195, 50);
+            label3.Size = new Size(190, 40);
             label3.TabIndex = 92;
-            label3.Text = "TicketId";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Text = "TicketId:";
             label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.BackColor = Color.FloralWhite;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.DarkKhaki;
-            label4.Location = new Point(48, 36);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(23, 50);
             label4.Name = "label4";
-            label4.Size = new Size(195, 50);
+            label4.Size = new Size(180, 40);
             label4.TabIndex = 91;
-            label4.Text = "Cancelled ID";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Text = "Cancelled ID:";
             label4.Click += label4_Click;
             // 
             // label6
@@ -152,15 +149,16 @@
             CanId.Name = "CanId";
             CanId.Size = new Size(278, 27);
             CanId.TabIndex = 89;
+            CanId.TextChanged += CanId_TextChanged;
             // 
             // label2
             // 
-            label2.BackColor = SystemColors.HotTrack;
-            label2.Font = new Font("Sitka Small", 25.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkSeaGreen;
+            label2.BackColor = Color.LightGoldenrodYellow;
+            label2.Font = new Font("SimSun", 25.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.DarkSalmon;
             label2.Location = new Point(-1, 85);
             label2.Name = "label2";
-            label2.Size = new Size(809, 70);
+            label2.Size = new Size(809, 60);
             label2.TabIndex = 88;
             label2.Text = "Ticket Cancellation";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -181,11 +179,11 @@
             // 
             CancelDGV.BackgroundColor = SystemColors.ControlLightLight;
             CancelDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CancelDGV.Location = new Point(29, 799);
+            CancelDGV.Location = new Point(15, 658);
             CancelDGV.Name = "CancelDGV";
             CancelDGV.RowHeadersWidth = 51;
             CancelDGV.RowTemplate.Height = 29;
-            CancelDGV.Size = new Size(741, 249);
+            CancelDGV.Size = new Size(767, 270);
             CancelDGV.TabIndex = 114;
             CancelDGV.CellContentClick += CancelDGV_CellContentClick;
             // 
@@ -195,9 +193,9 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.DarkKhaki;
-            button3.Location = new Point(181, 642);
+            button3.Location = new Point(170, 544);
             button3.Name = "button3";
-            button3.Size = new Size(122, 58);
+            button3.Size = new Size(131, 58);
             button3.TabIndex = 115;
             button3.Text = "Cancel";
             button3.UseVisualStyleBackColor = false;
@@ -209,9 +207,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.DarkKhaki;
-            button1.Location = new Point(357, 642);
+            button1.Location = new Point(330, 544);
             button1.Name = "button1";
-            button1.Size = new Size(122, 58);
+            button1.Size = new Size(131, 58);
             button1.TabIndex = 116;
             button1.Text = "Clear";
             button1.UseVisualStyleBackColor = true;
@@ -223,9 +221,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.DarkKhaki;
-            button2.Location = new Point(523, 642);
+            button2.Location = new Point(494, 544);
             button2.Name = "button2";
-            button2.Size = new Size(122, 58);
+            button2.Size = new Size(131, 58);
             button2.TabIndex = 117;
             button2.Text = "Back";
             button2.UseVisualStyleBackColor = false;
@@ -259,11 +257,12 @@
             grBox.Controls.Add(label3);
             grBox.Controls.Add(label7);
             grBox.Controls.Add(label4);
+            grBox.Controls.Add(TidCb);
             grBox.Font = new Font("Segoe UI", 19F, FontStyle.Regular, GraphicsUnit.Point);
             grBox.ForeColor = SystemColors.ControlText;
-            grBox.Location = new Point(59, 158);
+            grBox.Location = new Point(54, 158);
             grBox.Name = "grBox";
-            grBox.Size = new Size(681, 415);
+            grBox.Size = new Size(681, 349);
             grBox.TabIndex = 120;
             grBox.TabStop = false;
             grBox.Enter += grBox_Enter;
@@ -271,7 +270,7 @@
             // CancDate
             // 
             CancDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CancDate.Location = new Point(256, 283);
+            CancDate.Location = new Point(261, 234);
             CancDate.Name = "CancDate";
             CancDate.Size = new Size(250, 27);
             CancDate.TabIndex = 95;
@@ -281,7 +280,7 @@
             button4.BackColor = Color.DarkSalmon;
             button4.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
             button4.ForeColor = Color.Crimson;
-            button4.Location = new Point(759, -1);
+            button4.Location = new Point(757, 0);
             button4.Name = "button4";
             button4.Size = new Size(37, 31);
             button4.TabIndex = 121;
@@ -295,9 +294,9 @@
             label8.FlatStyle = FlatStyle.System;
             label8.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label8.ForeColor = Color.DarkOrchid;
-            label8.Location = new Point(-1, 24);
+            label8.Location = new Point(-1, 29);
             label8.Name = "label8";
-            label8.Size = new Size(809, 51);
+            label8.Size = new Size(796, 46);
             label8.TabIndex = 122;
             label8.Text = "LVD airline";
             label8.TextAlign = ContentAlignment.MiddleCenter;
@@ -321,17 +320,17 @@
             // label10
             // 
             label10.BackColor = Color.Black;
-            label10.Location = new Point(-283, 576);
+            label10.Location = new Point(-1, 510);
             label10.Name = "label10";
-            label10.Size = new Size(1363, 10);
+            label10.Size = new Size(796, 10);
             label10.TabIndex = 125;
             // 
             // label12
             // 
             label12.BackColor = Color.Black;
-            label12.Location = new Point(-1, -1);
+            label12.Location = new Point(-1, 74);
             label12.Name = "label12";
-            label12.Size = new Size(13, 587);
+            label12.Size = new Size(10, 1018);
             label12.TabIndex = 126;
             // 
             // label13
@@ -346,11 +345,13 @@
             // 
             panel1.BackColor = Color.DodgerBlue;
             panel1.Controls.Add(button6);
+            panel1.Controls.Add(label12);
+            panel1.Controls.Add(button4);
             panel1.Dock = DockStyle.Top;
             panel1.ForeColor = SystemColors.ControlLight;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(808, 33);
+            panel1.Size = new Size(794, 32);
             panel1.TabIndex = 128;
             // 
             // button6
@@ -370,13 +371,11 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(808, 1100);
+            ClientSize = new Size(794, 934);
             Controls.Add(label13);
-            Controls.Add(label12);
             Controls.Add(label10);
             Controls.Add(label1);
             Controls.Add(label11);
-            Controls.Add(button4);
             Controls.Add(label5);
             Controls.Add(FcodeTb);
             Controls.Add(button2);
@@ -385,7 +384,6 @@
             Controls.Add(CancelDGV);
             Controls.Add(button5);
             Controls.Add(label20);
-            Controls.Add(TidCb);
             Controls.Add(label6);
             Controls.Add(CanId);
             Controls.Add(label2);

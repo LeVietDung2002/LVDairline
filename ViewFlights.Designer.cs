@@ -69,9 +69,9 @@
             // 
             // label2
             // 
-            label2.BackColor = Color.ForestGreen;
+            label2.BackColor = Color.LightGoldenrodYellow;
             label2.Font = new Font("UD Digi Kyokasho NP-B", 25.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkKhaki;
+            label2.ForeColor = Color.DarkSalmon;
             label2.Location = new Point(4, 101);
             label2.Name = "label2";
             label2.Size = new Size(1098, 59);
@@ -94,7 +94,7 @@
             // 
             // FDate
             // 
-            FDate.Location = new Point(292, 296);
+            FDate.Location = new Point(220, 283);
             FDate.Name = "FDate";
             FDate.Size = new Size(250, 27);
             FDate.TabIndex = 38;
@@ -103,14 +103,13 @@
             // label9
             // 
             label9.BackColor = Color.FloralWhite;
-            label9.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.DarkKhaki;
-            label9.Location = new Point(12, 273);
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(34, 279);
             label9.Name = "label9";
-            label9.Size = new Size(265, 50);
+            label9.Size = new Size(166, 35);
             label9.TabIndex = 37;
-            label9.Text = "Take of date";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Text = "Take of date:";
             // 
             // DstCb
             // 
@@ -118,9 +117,9 @@
             DstCb.ForeColor = SystemColors.ActiveBorder;
             DstCb.FormattingEnabled = true;
             DstCb.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
-            DstCb.Location = new Point(789, 285);
+            DstCb.Location = new Point(766, 299);
             DstCb.Name = "DstCb";
-            DstCb.Size = new Size(151, 43);
+            DstCb.Size = new Size(186, 43);
             DstCb.TabIndex = 36;
             DstCb.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
@@ -130,66 +129,62 @@
             SrcCb.ForeColor = SystemColors.ActiveBorder;
             SrcCb.FormattingEnabled = true;
             SrcCb.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
-            SrcCb.Location = new Point(789, 218);
+            SrcCb.Location = new Point(766, 236);
             SrcCb.Name = "SrcCb";
-            SrcCb.Size = new Size(151, 43);
+            SrcCb.Size = new Size(186, 43);
             SrcCb.TabIndex = 35;
             SrcCb.SelectedIndexChanged += SrcCb_SelectedIndexChanged;
             // 
             // label8
             // 
             label8.BackColor = Color.FloralWhite;
-            label8.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.DarkKhaki;
-            label8.Location = new Point(584, 279);
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(584, 307);
             label8.Name = "label8";
-            label8.Size = new Size(252, 53);
+            label8.Size = new Size(140, 35);
             label8.TabIndex = 34;
-            label8.Text = "Destination";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
+            label8.Text = "Destination:";
             // 
             // label7
             // 
             label7.BackColor = Color.FloralWhite;
-            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(584, 213);
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(584, 244);
             label7.Name = "label7";
-            label7.Size = new Size(252, 53);
+            label7.Size = new Size(140, 35);
             label7.TabIndex = 33;
-            label7.Text = "Source";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            label7.Text = "Source:";
             // 
             // label5
             // 
             label5.BackColor = Color.FloralWhite;
-            label5.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.DarkKhaki;
-            label5.Location = new Point(257, 406);
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(292, 424);
             label5.Name = "label5";
-            label5.Size = new Size(265, 50);
+            label5.Size = new Size(158, 32);
             label5.TabIndex = 32;
-            label5.Text = "Numb seat";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
+            label5.Text = "Numb seat:";
             // 
             // label4
             // 
             label4.BackColor = Color.FloralWhite;
-            label4.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.DarkKhaki;
-            label4.Location = new Point(4, 207);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(34, 213);
             label4.Name = "label4";
-            label4.Size = new Size(265, 50);
+            label4.Size = new Size(156, 34);
             label4.TabIndex = 31;
-            label4.Text = "Flight code";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Text = "Flight code:";
             // 
             // label3
             // 
             label3.BackColor = Color.DarkMagenta;
             label3.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(522, 441);
+            label3.Location = new Point(456, 446);
             label3.Name = "label3";
             label3.Size = new Size(278, 10);
             label3.TabIndex = 30;
@@ -198,7 +193,7 @@
             // Seatnum
             // 
             Seatnum.BackColor = Color.AntiqueWhite;
-            Seatnum.Location = new Point(522, 420);
+            Seatnum.Location = new Point(456, 425);
             Seatnum.Name = "Seatnum";
             Seatnum.Size = new Size(278, 27);
             Seatnum.TabIndex = 29;
@@ -208,7 +203,7 @@
             label6.BackColor = Color.DarkMagenta;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(289, 247);
+            label6.Location = new Point(220, 237);
             label6.Name = "label6";
             label6.Size = new Size(278, 10);
             label6.TabIndex = 28;
@@ -217,7 +212,7 @@
             // FcodeTb
             // 
             FcodeTb.BackColor = Color.AntiqueWhite;
-            FcodeTb.Location = new Point(289, 230);
+            FcodeTb.Location = new Point(220, 220);
             FcodeTb.Name = "FcodeTb";
             FcodeTb.Size = new Size(278, 27);
             FcodeTb.TabIndex = 27;
@@ -283,17 +278,17 @@
             // 
             FlightDGV.BackgroundColor = SystemColors.ControlLightLight;
             FlightDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            FlightDGV.Location = new Point(-15, 538);
+            FlightDGV.Location = new Point(25, 545);
             FlightDGV.Name = "FlightDGV";
             FlightDGV.RowHeadersWidth = 51;
             FlightDGV.RowTemplate.Height = 29;
-            FlightDGV.Size = new Size(1117, 348);
+            FlightDGV.Size = new Size(1060, 321);
             FlightDGV.TabIndex = 76;
             FlightDGV.CellContentClick += PassengerDGV_CellContentClick;
             // 
             // FLand
             // 
-            FLand.Location = new Point(292, 368);
+            FLand.Location = new Point(220, 341);
             FLand.Name = "FLand";
             FLand.Size = new Size(250, 27);
             FLand.TabIndex = 78;
@@ -302,14 +297,13 @@
             // label10
             // 
             label10.BackColor = Color.FloralWhite;
-            label10.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.DarkKhaki;
-            label10.Location = new Point(21, 346);
+            label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(34, 337);
             label10.Name = "label10";
-            label10.Size = new Size(265, 50);
+            label10.Size = new Size(157, 38);
             label10.TabIndex = 77;
-            label10.Text = "Date of Land";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Text = "Date of Land:";
             // 
             // button5
             // 
@@ -420,7 +414,7 @@
             panel2.ForeColor = SystemColors.ControlLight;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1098, 42);
+            panel2.Size = new Size(1093, 42);
             panel2.TabIndex = 124;
             // 
             // label22
@@ -436,7 +430,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(1098, 1000);
+            ClientSize = new Size(1093, 878);
             Controls.Add(label22);
             Controls.Add(label21);
             Controls.Add(label20);

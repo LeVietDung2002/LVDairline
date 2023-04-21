@@ -37,23 +37,20 @@
             label3 = new Label();
             button1 = new Button();
             button2 = new Button();
-            UidTb = new TextBox();
             button3 = new Button();
-            label6 = new Label();
             label7 = new Label();
             PasswordTb = new TextBox();
             pictureBox2 = new PictureBox();
             button5 = new Button();
             panel2 = new Panel();
             button4 = new Button();
-            label16 = new Label();
             label1 = new Label();
             label8 = new Label();
-            label9 = new Label();
             label10 = new Label();
-            label11 = new Label();
             label12 = new Label();
-            label13 = new Label();
+            label14 = new Label();
+            label6 = new Label();
+            UidTb = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -103,7 +100,7 @@
             label4.BackColor = Color.Coral;
             label4.Font = new Font("Segoe UI", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.GrayText;
-            label4.Location = new Point(3, 134);
+            label4.Location = new Point(0, 141);
             label4.Name = "label4";
             label4.Size = new Size(284, 50);
             label4.TabIndex = 4;
@@ -113,35 +110,35 @@
             // label2
             // 
             label2.BackColor = Color.DarkMagenta;
-            label2.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.DarkKhaki;
-            label2.Location = new Point(290, 134);
+            label2.Location = new Point(317, 147);
             label2.Name = "label2";
-            label2.Size = new Size(211, 50);
+            label2.Size = new Size(109, 37);
             label2.TabIndex = 4;
             label2.Text = "UID";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.TextAlign = ContentAlignment.TopCenter;
             label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.BackColor = Color.DarkMagenta;
-            label3.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(293, 211);
+            label3.Location = new Point(317, 204);
             label3.Name = "label3";
-            label3.Size = new Size(211, 50);
+            label3.Size = new Size(109, 37);
             label3.TabIndex = 5;
             label3.Text = "Password";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            button1.BackColor = Color.DarkGreen;
+            button1.BackColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.DarkOrange;
-            button1.Location = new Point(404, 289);
+            button1.ForeColor = Color.Red;
+            button1.Location = new Point(431, 307);
             button1.Name = "button1";
             button1.Size = new Size(94, 58);
             button1.TabIndex = 6;
@@ -151,11 +148,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.DarkGreen;
+            button2.BackColor = Color.White;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.DarkOrange;
-            button2.Location = new Point(551, 289);
+            button2.ForeColor = Color.Red;
+            button2.Location = new Point(583, 307);
             button2.Name = "button2";
             button2.Size = new Size(94, 58);
             button2.TabIndex = 7;
@@ -163,65 +160,44 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // UidTb
-            // 
-            UidTb.BackColor = Color.AntiqueWhite;
-            UidTb.Location = new Point(523, 143);
-            UidTb.Name = "UidTb";
-            UidTb.Size = new Size(278, 27);
-            UidTb.TabIndex = 8;
-            UidTb.TextChanged += UidTb_TextChanged;
-            // 
             // button3
             // 
-            button3.BackColor = Color.DarkGreen;
+            button3.BackColor = Color.White;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.DarkOrange;
-            button3.Location = new Point(480, 353);
+            button3.ForeColor = Color.Red;
+            button3.Location = new Point(507, 371);
             button3.Name = "button3";
             button3.Size = new Size(94, 58);
             button3.TabIndex = 10;
             button3.Text = "Exit";
             button3.UseVisualStyleBackColor = false;
             // 
-            // label6
-            // 
-            label6.BackColor = Color.DarkMagenta;
-            label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(523, 163);
-            label6.Name = "label6";
-            label6.Size = new Size(278, 10);
-            label6.TabIndex = 11;
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            label6.Click += label6_Click;
-            // 
             // label7
             // 
             label7.BackColor = Color.DarkMagenta;
             label7.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(522, 237);
+            label7.Location = new Point(479, 231);
             label7.Name = "label7";
-            label7.Size = new Size(278, 10);
+            label7.Size = new Size(290, 10);
             label7.TabIndex = 12;
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PasswordTb
             // 
             PasswordTb.BackColor = Color.AntiqueWhite;
-            PasswordTb.Location = new Point(522, 220);
+            PasswordTb.Location = new Point(479, 204);
             PasswordTb.Name = "PasswordTb";
-            PasswordTb.Size = new Size(278, 27);
+            PasswordTb.Size = new Size(290, 27);
             PasswordTb.TabIndex = 13;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(718, 39);
+            pictureBox2.Location = new Point(691, 30);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(70, 47);
+            pictureBox2.Size = new Size(110, 57);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
@@ -248,7 +224,7 @@
             panel2.ForeColor = SystemColors.ControlLight;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 33);
+            panel2.Size = new Size(798, 33);
             panel2.TabIndex = 124;
             // 
             // button4
@@ -262,19 +238,6 @@
             button4.TabIndex = 122;
             button4.Text = "X";
             button4.UseVisualStyleBackColor = false;
-            // 
-            // label16
-            // 
-            label16.BackColor = SystemColors.GradientInactiveCaption;
-            label16.FlatStyle = FlatStyle.System;
-            label16.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label16.ForeColor = Color.DarkOrchid;
-            label16.Location = new Point(183, 39);
-            label16.Name = "label16";
-            label16.Size = new Size(800, 82);
-            label16.TabIndex = 130;
-            label16.Text = "LVD airline";
-            label16.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -292,14 +255,6 @@
             label8.Size = new Size(516, 12);
             label8.TabIndex = 132;
             // 
-            // label9
-            // 
-            label9.BackColor = Color.Black;
-            label9.Location = new Point(284, 121);
-            label9.Name = "label9";
-            label9.Size = new Size(10, 165);
-            label9.TabIndex = 133;
-            // 
             // label10
             // 
             label10.BackColor = Color.Black;
@@ -307,14 +262,6 @@
             label10.Name = "label10";
             label10.Size = new Size(10, 165);
             label10.TabIndex = 134;
-            // 
-            // label11
-            // 
-            label11.BackColor = Color.Black;
-            label11.Location = new Point(284, 33);
-            label11.Name = "label11";
-            label11.Size = new Size(10, 165);
-            label11.TabIndex = 135;
             // 
             // label12
             // 
@@ -324,32 +271,53 @@
             label12.Size = new Size(633, 10);
             label12.TabIndex = 136;
             // 
-            // label13
+            // label14
             // 
-            label13.BackColor = Color.Black;
-            label13.Location = new Point(284, 440);
-            label13.Name = "label13";
-            label13.Size = new Size(633, 10);
-            label13.TabIndex = 137;
+            label14.BackColor = SystemColors.GradientActiveCaption;
+            label14.Font = new Font("SimSun", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(284, 30);
+            label14.Name = "label14";
+            label14.Size = new Size(517, 97);
+            label14.TabIndex = 138;
+            label14.Text = "LVD airline";
+            label14.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            label6.BackColor = Color.DarkMagenta;
+            label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.DarkKhaki;
+            label6.Location = new Point(479, 174);
+            label6.Name = "label6";
+            label6.Size = new Size(290, 10);
+            label6.TabIndex = 139;
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // UidTb
+            // 
+            UidTb.BackColor = Color.AntiqueWhite;
+            UidTb.Location = new Point(479, 147);
+            UidTb.Name = "UidTb";
+            UidTb.Size = new Size(290, 27);
+            UidTb.TabIndex = 140;
+            UidTb.TextChanged += textBox1_TextChanged;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label13);
+            ClientSize = new Size(798, 450);
+            Controls.Add(label6);
+            Controls.Add(UidTb);
+            Controls.Add(pictureBox2);
+            Controls.Add(label14);
             Controls.Add(label12);
-            Controls.Add(label11);
             Controls.Add(label10);
-            Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label1);
-            Controls.Add(pictureBox2);
             Controls.Add(label7);
-            Controls.Add(label6);
             Controls.Add(button3);
-            Controls.Add(UidTb);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
@@ -357,7 +325,6 @@
             Controls.Add(panel1);
             Controls.Add(PasswordTb);
             Controls.Add(panel2);
-            Controls.Add(label16);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
@@ -380,9 +347,7 @@
         private Button button1;
         private Button button2;
         private Label label5;
-        private TextBox UidTb;
         private Button button3;
-        private Label label6;
         private Label label7;
         private PictureBox pictureBox1;
         private TextBox PasswordTb;
@@ -390,13 +355,12 @@
         private Button button5;
         private Panel panel2;
         private Button button4;
-        private Label label16;
         private Label label1;
         private Label label8;
-        private Label label9;
         private Label label10;
-        private Label label11;
         private Label label12;
-        private Label label13;
+        private Label label14;
+        private Label label6;
+        private TextBox UidTb;
     }
 }

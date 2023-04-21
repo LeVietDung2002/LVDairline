@@ -88,5 +88,15 @@ namespace airline
         {
             Application.Exit();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NationalityCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -71,9 +71,9 @@
             // 
             // label2
             // 
-            label2.BackColor = Color.DodgerBlue;
+            label2.BackColor = Color.LightGoldenrodYellow;
             label2.Font = new Font("Times New Roman", 25.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkKhaki;
+            label2.ForeColor = Color.DarkSalmon;
             label2.Location = new Point(0, 86);
             label2.Name = "label2";
             label2.Size = new Size(1357, 50);
@@ -84,23 +84,22 @@
             // label12
             // 
             label12.BackColor = Color.FloralWhite;
-            label12.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = Color.DarkKhaki;
-            label12.Location = new Point(691, 345);
+            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(640, 320);
             label12.Name = "label12";
-            label12.Size = new Size(252, 53);
+            label12.Size = new Size(186, 45);
             label12.TabIndex = 65;
-            label12.Text = "Nationality";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
+            label12.Text = "Nationality:";
             // 
             // label10
             // 
             label10.BackColor = Color.DarkMagenta;
             label10.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.DarkKhaki;
-            label10.Location = new Point(1030, 302);
+            label10.Location = new Point(864, 267);
             label10.Name = "label10";
-            label10.Size = new Size(278, 10);
+            label10.Size = new Size(290, 10);
             label10.TabIndex = 64;
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -108,78 +107,74 @@
             // 
             PNameTb.BackColor = Color.AntiqueWhite;
             PNameTb.Enabled = false;
-            PNameTb.Location = new Point(1030, 285);
+            PNameTb.Location = new Point(864, 250);
             PNameTb.Name = "PNameTb";
-            PNameTb.Size = new Size(278, 27);
+            PNameTb.Size = new Size(290, 27);
             PNameTb.TabIndex = 63;
             PNameTb.TextAlign = HorizontalAlignment.Right;
             // 
             // label9
             // 
             label9.BackColor = Color.FloralWhite;
-            label9.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.DarkKhaki;
-            label9.Location = new Point(575, 262);
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(640, 250);
             label9.Name = "label9";
-            label9.Size = new Size(432, 50);
+            label9.Size = new Size(115, 39);
             label9.TabIndex = 62;
-            label9.Text = "Name";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Text = "Name:";
             label9.Click += label9_Click;
             // 
             // label7
             // 
             label7.BackColor = Color.FloralWhite;
-            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(-75, 261);
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(38, 250);
             label7.Name = "label7";
-            label7.Size = new Size(432, 50);
+            label7.Size = new Size(171, 39);
             label7.TabIndex = 61;
-            label7.Text = "Passenger ID";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            label7.Text = "Passenger ID:";
             // 
             // label3
             // 
             label3.BackColor = Color.FloralWhite;
-            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(639, 194);
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(640, 180);
             label3.Name = "label3";
-            label3.Size = new Size(349, 50);
+            label3.Size = new Size(172, 33);
             label3.TabIndex = 60;
-            label3.Text = "FlightCode";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Text = "FlightCode:";
             // 
             // label4
             // 
             label4.BackColor = Color.FloralWhite;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.DarkKhaki;
-            label4.Location = new Point(-5, 187);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(38, 180);
             label4.Name = "label4";
-            label4.Size = new Size(265, 50);
+            label4.Size = new Size(171, 38);
             label4.TabIndex = 55;
-            label4.Text = "Ticket ID";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Text = "Ticket ID:";
             // 
             // label6
             // 
             label6.BackColor = Color.DarkMagenta;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(378, 221);
+            label6.Location = new Point(215, 203);
             label6.Name = "label6";
-            label6.Size = new Size(278, 10);
+            label6.Size = new Size(343, 10);
             label6.TabIndex = 54;
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Tid
             // 
             Tid.BackColor = Color.AntiqueWhite;
-            Tid.Location = new Point(378, 204);
+            Tid.Location = new Point(215, 186);
             Tid.Name = "Tid";
-            Tid.Size = new Size(278, 27);
+            Tid.Size = new Size(343, 27);
             Tid.TabIndex = 53;
             // 
             // FCodeCb
@@ -187,9 +182,9 @@
             FCodeCb.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             FCodeCb.ForeColor = SystemColors.ActiveBorder;
             FCodeCb.FormattingEnabled = true;
-            FCodeCb.Location = new Point(1030, 194);
+            FCodeCb.Location = new Point(864, 174);
             FCodeCb.Name = "FCodeCb";
-            FCodeCb.Size = new Size(151, 43);
+            FCodeCb.Size = new Size(287, 43);
             FCodeCb.TabIndex = 72;
             // 
             // PIdCb
@@ -197,9 +192,9 @@
             PIdCb.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point);
             PIdCb.ForeColor = Color.Red;
             PIdCb.FormattingEnabled = true;
-            PIdCb.Location = new Point(378, 268);
+            PIdCb.Location = new Point(215, 246);
             PIdCb.Name = "PIdCb";
-            PIdCb.Size = new Size(151, 39);
+            PIdCb.Size = new Size(258, 39);
             PIdCb.TabIndex = 73;
             PIdCb.SelectionChangeCommitted += PIdCb_SelectionChangeCommitted_1;
             // 
@@ -208,9 +203,9 @@
             label5.BackColor = Color.DarkMagenta;
             label5.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.DarkKhaki;
-            label5.Location = new Point(1030, 380);
+            label5.Location = new Point(864, 337);
             label5.Name = "label5";
-            label5.Size = new Size(278, 10);
+            label5.Size = new Size(290, 10);
             label5.TabIndex = 75;
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -218,9 +213,9 @@
             // 
             PNatTb.BackColor = Color.AntiqueWhite;
             PNatTb.Enabled = false;
-            PNatTb.Location = new Point(1030, 363);
+            PNatTb.Location = new Point(864, 320);
             PNatTb.Name = "PNatTb";
-            PNatTb.Size = new Size(278, 27);
+            PNatTb.Size = new Size(290, 27);
             PNatTb.TabIndex = 74;
             PNatTb.TextAlign = HorizontalAlignment.Right;
             // 
@@ -229,71 +224,69 @@
             label8.BackColor = Color.DarkMagenta;
             label8.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.DarkKhaki;
-            label8.Location = new Point(372, 372);
+            label8.Location = new Point(215, 337);
             label8.Name = "label8";
-            label8.Size = new Size(278, 10);
+            label8.Size = new Size(343, 10);
             label8.TabIndex = 78;
             label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PPassTb
             // 
             PPassTb.BackColor = Color.AntiqueWhite;
-            PPassTb.Location = new Point(372, 355);
+            PPassTb.Location = new Point(215, 320);
             PPassTb.Name = "PPassTb";
-            PPassTb.Size = new Size(278, 27);
+            PPassTb.Size = new Size(343, 27);
             PPassTb.TabIndex = 77;
             // 
             // label15
             // 
             label15.BackColor = Color.FloralWhite;
-            label15.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.ForeColor = Color.DarkKhaki;
-            label15.Location = new Point(8, 345);
+            label15.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = Color.Black;
+            label15.Location = new Point(38, 320);
             label15.Name = "label15";
-            label15.Size = new Size(252, 53);
+            label15.Size = new Size(149, 35);
             label15.TabIndex = 76;
-            label15.Text = "Passport";
-            label15.TextAlign = ContentAlignment.MiddleCenter;
+            label15.Text = "Passport:";
             // 
             // label18
             // 
             label18.BackColor = Color.DarkMagenta;
             label18.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label18.ForeColor = Color.DarkKhaki;
-            label18.Location = new Point(656, 455);
+            label18.Location = new Point(506, 415);
             label18.Name = "label18";
-            label18.Size = new Size(278, 10);
+            label18.Size = new Size(356, 10);
             label18.TabIndex = 84;
             label18.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PAmtTb
             // 
             PAmtTb.BackColor = Color.AntiqueWhite;
-            PAmtTb.Location = new Point(656, 438);
+            PAmtTb.Location = new Point(506, 398);
             PAmtTb.Name = "PAmtTb";
-            PAmtTb.Size = new Size(278, 27);
+            PAmtTb.Size = new Size(356, 27);
             PAmtTb.TabIndex = 83;
             // 
             // label19
             // 
             label19.BackColor = Color.FloralWhite;
-            label19.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.ForeColor = Color.DarkKhaki;
-            label19.Location = new Point(398, 420);
+            label19.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.ForeColor = Color.Black;
+            label19.Location = new Point(328, 392);
             label19.Name = "label19";
-            label19.Size = new Size(252, 53);
+            label19.Size = new Size(158, 35);
             label19.TabIndex = 82;
-            label19.Text = "Amount";
-            label19.TextAlign = ContentAlignment.MiddleCenter;
+            label19.Text = "Amount:";
             // 
             // label20
             // 
             label20.BackColor = Color.FloralWhite;
             label20.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label20.ForeColor = Color.DarkKhaki;
-            label20.Location = new Point(446, 558);
+            label20.Location = new Point(448, 549);
             label20.Name = "label20";
-            label20.Size = new Size(511, 50);
+            label20.Size = new Size(511, 68);
             label20.TabIndex = 85;
             label20.Text = "Booking";
             label20.TextAlign = ContentAlignment.MiddleCenter;
@@ -343,13 +336,14 @@
             // 
             // TicketDGV
             // 
+            TicketDGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             TicketDGV.BackgroundColor = SystemColors.ControlLightLight;
             TicketDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TicketDGV.Location = new Point(-5, 621);
+            TicketDGV.Location = new Point(5, 642);
             TicketDGV.Name = "TicketDGV";
             TicketDGV.RowHeadersWidth = 51;
             TicketDGV.RowTemplate.Height = 29;
-            TicketDGV.Size = new Size(1362, 348);
+            TicketDGV.Size = new Size(1242, 262);
             TicketDGV.TabIndex = 91;
             TicketDGV.CellContentClick += FlightDGV_CellContentClick;
             // 
@@ -358,9 +352,9 @@
             button5.BackColor = Color.DarkSalmon;
             button5.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
             button5.ForeColor = Color.Crimson;
-            button5.Location = new Point(1305, 0);
+            button5.Location = new Point(1211, 0);
             button5.Name = "button5";
-            button5.Size = new Size(40, 36);
+            button5.Size = new Size(40, 33);
             button5.TabIndex = 92;
             button5.Text = "X";
             button5.UseVisualStyleBackColor = false;
@@ -429,13 +423,13 @@
             panel2.ForeColor = SystemColors.ControlLight;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1357, 33);
+            panel2.Size = new Size(1252, 33);
             panel2.TabIndex = 125;
             // 
             // label21
             // 
             label21.BackColor = Color.Black;
-            label21.Location = new Point(0, 621);
+            label21.Location = new Point(3, 629);
             label21.Name = "label21";
             label21.Size = new Size(1363, 10);
             label21.TabIndex = 126;
@@ -470,7 +464,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(1357, 1091);
+            ClientSize = new Size(1252, 909);
+            Controls.Add(label6);
+            Controls.Add(Tid);
             Controls.Add(label24);
             Controls.Add(label23);
             Controls.Add(label22);
@@ -502,8 +498,6 @@
             Controls.Add(label7);
             Controls.Add(label3);
             Controls.Add(label4);
-            Controls.Add(label6);
-            Controls.Add(Tid);
             Controls.Add(label2);
             Controls.Add(panel2);
             Controls.Add(label1);

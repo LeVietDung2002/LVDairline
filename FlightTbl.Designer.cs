@@ -45,6 +45,7 @@
             label9 = new Label();
             FDate = new DateTimePicker();
             panel2 = new Panel();
+            panel1 = new Panel();
             button2 = new Button();
             button3 = new Button();
             FLand = new DateTimePicker();
@@ -56,7 +57,6 @@
             label14 = new Label();
             label16 = new Label();
             label1 = new Label();
-            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -64,9 +64,9 @@
             // 
             // label2
             // 
-            label2.BackColor = Color.DarkKhaki;
+            label2.BackColor = Color.LightGoldenrodYellow;
             label2.Font = new Font("SimSun", 25.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkOrchid;
+            label2.ForeColor = Color.DarkSalmon;
             label2.Location = new Point(12, 106);
             label2.Name = "label2";
             label2.Size = new Size(1128, 88);
@@ -80,18 +80,18 @@
             label6.BackColor = Color.DarkMagenta;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DarkKhaki;
-            label6.Location = new Point(277, 233);
+            label6.Location = new Point(227, 247);
             label6.Name = "label6";
-            label6.Size = new Size(278, 10);
+            label6.Size = new Size(290, 10);
             label6.TabIndex = 13;
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FcodeTb
             // 
             FcodeTb.BackColor = Color.AntiqueWhite;
-            FcodeTb.Location = new Point(277, 216);
+            FcodeTb.Location = new Point(227, 230);
             FcodeTb.Name = "FcodeTb";
-            FcodeTb.Size = new Size(278, 27);
+            FcodeTb.Size = new Size(290, 27);
             FcodeTb.TabIndex = 12;
             // 
             // label3
@@ -99,70 +99,66 @@
             label3.BackColor = Color.DarkMagenta;
             label3.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DarkKhaki;
-            label3.Location = new Point(277, 446);
+            label3.Location = new Point(227, 431);
             label3.Name = "label3";
-            label3.Size = new Size(278, 10);
+            label3.Size = new Size(290, 10);
             label3.TabIndex = 15;
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FCap
             // 
             FCap.BackColor = Color.AntiqueWhite;
-            FCap.Location = new Point(277, 425);
+            FCap.Location = new Point(227, 410);
             FCap.Name = "FCap";
-            FCap.Size = new Size(278, 27);
+            FCap.Size = new Size(290, 27);
             FCap.TabIndex = 14;
             FCap.TextChanged += seatNumb_TextChanged;
             // 
             // label4
             // 
             label4.BackColor = Color.FloralWhite;
-            label4.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.DarkKhaki;
-            label4.Location = new Point(12, 216);
+            label4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(39, 230);
             label4.Name = "label4";
-            label4.Size = new Size(265, 50);
+            label4.Size = new Size(182, 39);
             label4.TabIndex = 16;
-            label4.Text = "Flight code";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Text = "Flight code:";
             label4.Click += label4_Click;
             // 
             // label5
             // 
             label5.BackColor = Color.FloralWhite;
-            label5.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.DarkKhaki;
-            label5.Location = new Point(-5, 402);
+            label5.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(39, 410);
             label5.Name = "label5";
-            label5.Size = new Size(265, 50);
+            label5.Size = new Size(171, 35);
             label5.TabIndex = 17;
-            label5.Text = "Numb seat";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
+            label5.Text = "Numb seat:";
             // 
             // label7
             // 
             label7.BackColor = Color.FloralWhite;
-            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.DarkKhaki;
-            label7.Location = new Point(-55, 279);
+            label7.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(39, 290);
             label7.Name = "label7";
-            label7.Size = new Size(252, 53);
+            label7.Size = new Size(119, 45);
             label7.TabIndex = 18;
-            label7.Text = "Source";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            label7.Text = "Source:";
             label7.Click += label7_Click;
             // 
             // label8
             // 
             label8.BackColor = Color.FloralWhite;
-            label8.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.DarkKhaki;
-            label8.Location = new Point(-33, 326);
+            label8.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(39, 350);
             label8.Name = "label8";
-            label8.Size = new Size(252, 53);
+            label8.Size = new Size(171, 41);
             label8.TabIndex = 19;
-            label8.Text = "Destination";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
+            label8.Text = "Destination:";
             // 
             // Fsrc
             // 
@@ -171,9 +167,9 @@
             Fsrc.ForeColor = Color.Red;
             Fsrc.FormattingEnabled = true;
             Fsrc.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
-            Fsrc.Location = new Point(277, 279);
+            Fsrc.Location = new Point(227, 282);
             Fsrc.Name = "Fsrc";
-            Fsrc.Size = new Size(151, 43);
+            Fsrc.Size = new Size(214, 43);
             Fsrc.TabIndex = 20;
             Fsrc.SelectedIndexChanged += Fsrc_SelectedIndexChanged;
             // 
@@ -183,9 +179,9 @@
             FDest.ForeColor = Color.Red;
             FDest.FormattingEnabled = true;
             FDest.Items.AddRange(new object[] { "BangKok", "TP.HCM", "Dubai", "Singapore", "Tokyo", "Kyoto", "Madrid", "Da Nang", "Hue", "California" });
-            FDest.Location = new Point(277, 332);
+            FDest.Location = new Point(227, 342);
             FDest.Name = "FDest";
-            FDest.Size = new Size(151, 43);
+            FDest.Size = new Size(214, 43);
             FDest.TabIndex = 21;
             FDest.SelectedIndexChanged += FDest_SelectedIndexChanged;
             // 
@@ -206,9 +202,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(587, 233);
+            pictureBox1.Location = new Point(607, 207);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(434, 271);
+            pictureBox1.Size = new Size(567, 387);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
@@ -216,20 +212,19 @@
             // label9
             // 
             label9.BackColor = Color.FloralWhite;
-            label9.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.DarkKhaki;
-            label9.Location = new Point(-5, 470);
+            label9.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(39, 470);
             label9.Name = "label9";
-            label9.Size = new Size(265, 50);
+            label9.Size = new Size(171, 35);
             label9.TabIndex = 25;
-            label9.Text = "Take of date";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Text = "Take of date:";
             // 
             // FDate
             // 
-            FDate.Location = new Point(305, 492);
+            FDate.Location = new Point(227, 472);
             FDate.Name = "FDate";
-            FDate.Size = new Size(250, 27);
+            FDate.Size = new Size(257, 27);
             FDate.TabIndex = 26;
             FDate.ValueChanged += FDate_ValueChanged;
             // 
@@ -243,6 +238,17 @@
             panel2.Size = new Size(1152, 32);
             panel2.TabIndex = 57;
             panel2.Paint += panel2_Paint;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DodgerBlue;
+            panel1.Controls.Add(button2);
+            panel1.Dock = DockStyle.Top;
+            panel1.ForeColor = SystemColors.ControlLight;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1152, 33);
+            panel1.TabIndex = 60;
             // 
             // button2
             // 
@@ -263,7 +269,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.DarkKhaki;
-            button3.Location = new Point(471, 651);
+            button3.Location = new Point(502, 651);
             button3.Name = "button3";
             button3.Size = new Size(168, 58);
             button3.TabIndex = 58;
@@ -273,7 +279,7 @@
             // 
             // FLand
             // 
-            FLand.Location = new Point(305, 566);
+            FLand.Location = new Point(227, 532);
             FLand.Name = "FLand";
             FLand.Size = new Size(250, 27);
             FLand.TabIndex = 59;
@@ -281,14 +287,13 @@
             // label10
             // 
             label10.BackColor = Color.FloralWhite;
-            label10.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.DarkKhaki;
-            label10.Location = new Point(-42, 544);
+            label10.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(39, 530);
             label10.Name = "label10";
-            label10.Size = new Size(344, 50);
+            label10.Size = new Size(211, 50);
             label10.TabIndex = 60;
-            label10.Text = "Date of Land";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Text = "Date of Land:";
             label10.Click += label10_Click;
             // 
             // button4
@@ -297,7 +302,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.DarkKhaki;
-            button4.Location = new Point(645, 651);
+            button4.Location = new Point(703, 651);
             button4.Name = "button4";
             button4.Size = new Size(170, 58);
             button4.TabIndex = 62;
@@ -316,7 +321,7 @@
             // label12
             // 
             label12.BackColor = Color.Black;
-            label12.Location = new Point(-128, 615);
+            label12.Location = new Point(-127, 594);
             label12.Name = "label12";
             label12.Size = new Size(1363, 10);
             label12.TabIndex = 95;
@@ -326,7 +331,7 @@
             label13.BackColor = Color.Black;
             label13.Location = new Point(1142, -2);
             label13.Name = "label13";
-            label13.Size = new Size(10, 617);
+            label13.Size = new Size(10, 772);
             label13.TabIndex = 96;
             // 
             // label14
@@ -334,7 +339,7 @@
             label14.BackColor = Color.Black;
             label14.Location = new Point(0, -1);
             label14.Name = "label14";
-            label14.Size = new Size(10, 628);
+            label14.Size = new Size(10, 771);
             label14.TabIndex = 97;
             // 
             // label16
@@ -358,23 +363,13 @@
             label1.Size = new Size(1363, 10);
             label1.TabIndex = 124;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.DodgerBlue;
-            panel1.Controls.Add(button2);
-            panel1.Dock = DockStyle.Top;
-            panel1.ForeColor = SystemColors.ControlLight;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 33);
-            panel1.TabIndex = 60;
-            // 
             // FlightTbl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
             ClientSize = new Size(1152, 768);
+            Controls.Add(FLand);
             Controls.Add(label1);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -382,12 +377,10 @@
             Controls.Add(label11);
             Controls.Add(button4);
             Controls.Add(label10);
-            Controls.Add(FLand);
             Controls.Add(button3);
             Controls.Add(panel2);
             Controls.Add(FDate);
             Controls.Add(label9);
-            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(FDest);
             Controls.Add(Fsrc);
@@ -401,6 +394,7 @@
             Controls.Add(FcodeTb);
             Controls.Add(label2);
             Controls.Add(label16);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FlightTbl";
             StartPosition = FormStartPosition.CenterScreen;

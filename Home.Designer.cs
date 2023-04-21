@@ -36,14 +36,13 @@
             button4 = new Button();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            label16 = new Label();
             panel2 = new Panel();
             button5 = new Button();
             button6 = new Button();
-            label4 = new Label();
             label3 = new Label();
             panel1 = new Panel();
             label5 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -65,7 +64,7 @@
             // button1
             // 
             button1.BackColor = Color.DarkSalmon;
-            button1.Font = new Font("SimSun-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("SimSun-ExtB", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(121, 378);
             button1.Name = "button1";
             button1.Size = new Size(138, 60);
@@ -77,7 +76,7 @@
             // button2
             // 
             button2.BackColor = Color.DarkSalmon;
-            button2.Font = new Font("SimSun-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Font = new Font("SimSun-ExtB", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(265, 378);
             button2.Name = "button2";
             button2.Size = new Size(138, 60);
@@ -89,7 +88,7 @@
             // button3
             // 
             button3.BackColor = Color.DarkSalmon;
-            button3.Font = new Font("SimSun-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Font = new Font("SimSun-ExtB", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(409, 378);
             button3.Name = "button3";
             button3.Size = new Size(138, 60);
@@ -101,7 +100,7 @@
             // button4
             // 
             button4.BackColor = Color.DarkSalmon;
-            button4.Font = new Font("SimSun-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Font = new Font("SimSun-ExtB", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(553, 378);
             button4.Name = "button4";
             button4.Size = new Size(138, 60);
@@ -113,7 +112,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(282, 194);
+            pictureBox1.Location = new Point(282, 196);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(228, 158);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -129,20 +128,6 @@
             label2.TabIndex = 127;
             label2.Click += label2_Click;
             // 
-            // label16
-            // 
-            label16.BackColor = SystemColors.GradientInactiveCaption;
-            label16.FlatStyle = FlatStyle.System;
-            label16.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label16.ForeColor = Color.DarkOrchid;
-            label16.Location = new Point(0, 43);
-            label16.Name = "label16";
-            label16.Size = new Size(800, 82);
-            label16.TabIndex = 129;
-            label16.Text = "LVD airline";
-            label16.TextAlign = ContentAlignment.MiddleCenter;
-            label16.Click += label16_Click;
-            // 
             // panel2
             // 
             panel2.BackColor = Color.DodgerBlue;
@@ -152,7 +137,7 @@
             panel2.ForeColor = SystemColors.ControlLight;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 33);
+            panel2.Size = new Size(800, 43);
             panel2.TabIndex = 123;
             // 
             // button5
@@ -180,18 +165,6 @@
             button6.Text = "X";
             button6.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            label4.BackColor = Color.Coral;
-            label4.Font = new Font("Segoe UI", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label4.ForeColor = Color.DeepSkyBlue;
-            label4.Location = new Point(268, 33);
-            label4.Name = "label4";
-            label4.Size = new Size(284, 50);
-            label4.TabIndex = 5;
-            label4.Text = "LVD airline";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label3
             // 
             label3.BackColor = Color.Black;
@@ -203,9 +176,8 @@
             // panel1
             // 
             panel1.BackColor = Color.Coral;
-            panel1.Controls.Add(label16);
-            panel1.Controls.Add(label3);
             panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -220,6 +192,17 @@
             label5.Name = "label5";
             label5.Size = new Size(1363, 10);
             label5.TabIndex = 130;
+            // 
+            // label4
+            // 
+            label4.BackColor = SystemColors.GradientActiveCaption;
+            label4.Font = new Font("SimSun", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(0, 43);
+            label4.Name = "label4";
+            label4.Size = new Size(800, 75);
+            label4.TabIndex = 129;
+            label4.Text = "LVD airline";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Home
             // 
@@ -255,13 +238,12 @@
         private Button button4;
         private PictureBox pictureBox1;
         private Label label2;
-        private Label label16;
         private Panel panel2;
         private Button button5;
         private Button button6;
-        private Label label4;
         private Label label3;
         private Panel panel1;
         private Label label5;
+        private Label label4;
     }
 }

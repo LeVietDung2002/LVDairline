@@ -33,9 +33,10 @@
             pictureBox1 = new PictureBox();
             ProgressBar = new ProgressBar();
             timer1 = new System.Windows.Forms.Timer(components);
-            label16 = new Label();
             label1 = new Label();
             label2 = new Label();
+            label3 = new Label();
+            colorDialog1 = new ColorDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -43,9 +44,9 @@
             // 
             pictureBox1.BackColor = Color.FloralWhite;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-31, 102);
+            pictureBox1.Location = new Point(-30, 102);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(885, 395);
+            pictureBox1.Size = new Size(830, 395);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -63,19 +64,6 @@
             // 
             timer1.Tick += timer1_Tick;
             // 
-            // label16
-            // 
-            label16.BackColor = SystemColors.GradientInactiveCaption;
-            label16.FlatStyle = FlatStyle.System;
-            label16.Font = new Font("SimSun-ExtB", 25.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label16.ForeColor = Color.DarkOrchid;
-            label16.Location = new Point(-2, 12);
-            label16.Name = "label16";
-            label16.Size = new Size(802, 87);
-            label16.TabIndex = 125;
-            label16.Text = "LVD airline";
-            label16.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             label1.BackColor = Color.Black;
@@ -92,14 +80,25 @@
             label2.Size = new Size(1363, 10);
             label2.TabIndex = 127;
             // 
+            // label3
+            // 
+            label3.BackColor = SystemColors.GradientActiveCaption;
+            label3.Font = new Font("SimSun", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(-2, 2);
+            label3.Name = "label3";
+            label3.Size = new Size(787, 97);
+            label3.TabIndex = 128;
+            label3.Text = "LVD airline";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(785, 450);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(label16);
             Controls.Add(ProgressBar);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
@@ -116,8 +115,9 @@
         private PictureBox pictureBox1;
         private ProgressBar ProgressBar;
         private System.Windows.Forms.Timer timer1;
-        private Label label16;
         private Label label1;
         private Label label2;
+        private Label label3;
+        private ColorDialog colorDialog1;
     }
 }
